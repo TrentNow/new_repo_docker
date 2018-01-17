@@ -2,7 +2,7 @@ FROM nginx:latest
 
 LABEL maintainer="trentonlcain@gmail.com"
 
-RUN yum update -y
+RUN apt-get -y update
 
 EXPOSE 80
 
