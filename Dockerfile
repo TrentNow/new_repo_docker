@@ -1,4 +1,4 @@
-FROM apache:latest
+FROM httpd:latest
 
 LABEL maintainer="trentonlcain@gmail.com"
 
@@ -9,4 +9,4 @@ ADD index.html /var/www/html/index.html
 
 EXPOSE 80
 
-ENTRYPOINT ["/usr/sbin/apache]
+ENTRYPOINT ["/usr/sbin/httpd]
